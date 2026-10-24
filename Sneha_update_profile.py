@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Regenerates the dynamic parts of the profile README from live GitHub data.
 
 Outputs
@@ -27,7 +27,7 @@ from urllib.request import Request, urlopen
 
 USER = os.environ.get("GH_USER", "Sneha72893")
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
 README = ROOT / "README.md"
 MAX_REPOS = 40
